@@ -1,39 +1,44 @@
-$(function() {
-    var mmb = new MMB();
-    mmb.getindexmenu();
-    mmb.getmoneyctrl();
-})
+$(function(){
+    var  requestUrl="http://localhost:9090"
+    // 轮播图初始化
+    var mySwiper = new Swiper ('.swiper-container', {
+        // direction: 'vertical', // 垂直切换选项
+        loop: true, // 循环模式选项
+        
+        // 如果需要分页器
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        autoplay: true,
+        delay: 500
+        
+        // 如果需要前进后退按钮
+  
+      })    
+    
+      
+// menu区域数据
+// url=requestUrl+"api/getindexmenu";
+// console.log(url);
 
-var MMB = function() {
-
-}
-
-MMB.prototype = {
-	 baseURL:'http://192.168.12.83:9090',
-    // 1. 获取主页菜单功能
-    getindexmenu: function() {
-    		var that = this;
-        // 1. 请求主页菜单的数据
-        // 2. 写模板渲染页面
-        $.ajax({
-            url: that.baseURL+'/api/getindexmenu',
-            success: function(data) {
-                var html = template('indexMenuTpl', data);
-                $('#nav .mui-row').html(html);
-            }
-        })
-    },
-    //2. 获取主页的折扣商品数据
-    getmoneyctrl: function() {
-      	var that = this;
-        // 1. 请求主页菜单的数据
-        // 2. 写模板渲染页面
-        $.ajax({
-            url: that.baseURL+'/api/getmoneyctrl',
-            success: function(data) {
-                var html = template('moneyCtrlTpl', data);
-                $('#productList ul').html(html);
-            }
-        })
+$.ajax({
+    url:requestUrl+"/api/getindexmenu",
+    
+    success:function(data){
+        console.log(data);
+        var html=template('menuListTpl',data);
+        $('.menu-list').html(html);
+    
     }
-}
+})
+// 热门推荐区域
+$.ajax({
+    url:requestUrl+"/api/getmoneyctrl",
+    success:function(data){
+        console.log(data);
+        var html=template('commodityHotTpl', data);
+        $('.commodity-hot').html(html);
+        
+    }
+})
+})

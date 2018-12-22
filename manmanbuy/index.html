@@ -3,146 +3,138 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>主页</title>
-    <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.css">
-    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
-    <link rel="stylesheet/less" href="less/index.less">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢首页</title>
+    <link rel="stylesheet" href="./lib/swiper 轮播图/css/swiper.css">
+    <link rel="stylesheet" href="./lib/bootstarap/css/bootstrap.css">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="./less/index.less">
     <script src="lib/less/less.js"></script>
 </head>
 
 <body>
+    <!-- 头部区域 -->
     <header id="header">
-        <a href="#" title="" class="logo">
-            <img src="http://static.manmanbuy.com/m/img/mlogo.png" alt="">
-        </a>
-        <form action="#">
-            <input type="search" name="">
-        </form>
-        <a href="#" title="" class="download">
-            下载
-        </a>
-    </header>
-    <main id="main">
-        <nav id="nav">
-            <div class="mui-row">
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-            </div>
-        </nav>
-        <div id="productList">
-            <div class="title">
-                <span>超值折扣推荐</span>
-            </div>
-            <div class="content">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <div class="left">
-                                <img src="http://wnzk-img.zuyushop.com/r_img/img/20181029/16/4ea84814d68341d2a9bf39105d3cec26.jpg" alt="">
-                            </div>
-                            <div class="right">
-                                <p class="product-name">
-                                    双11预售：鸿星尔克 男童棉马甲
-                                    <span>89元包邮 （付20元定金立减40元）</span>
-                                </p>
-                                <div class="product-from">
-                                    天猫商城 | 10-29 17:04
-                                    <i class="icon-common"></i>
-                                    <span>0</span>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </main>
-    <footer id="footer"></footer>
-    <script id="indexMenuTpl" type="text/html">
-        {{each result value}}
-        <div class="mui-col-xs-3">
-            <a href="{{value.titlehref}}" title="">
-                <!-- 标签属于富文本 丰富的文本 当前的标签属于富文本 -->
-                <!-- 如果要解析富文本需要带@符号 -->
-                {{@value.img}}
-                <p>{{value.name}}</p>
-            </a>
-        </div>
-        {{/each}}
-    </script>
-    <script id="moneyCtrlTpl" type="text/html">
-        {{each result value}}
-        <li>
+        <div class="logo">
             <a href="#">
-                <div class="left">
-                    {{@value.productImgSm}}
-                </div>
-                <div class="right">
-                    <p class="product-name">
-                        {{value.productName}}
-                        <span>{{value.productPinkage}}</span>
-                    </p>
-                    <div class="product-from">
-                        {{value.productFrom}} | {{value.productTime}}
-                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                        <span>{{value.productComCount.replace('有','').replace('人评论','')}}</span>
-                    </div>
-                </div>
+                <img src="images/header_logo.png" alt="">
             </a>
-        </li>
-        {{/each}}
-    </script>
-    <script src="lib/mui/js/mui.js"></script>
-    <script src="lib/zepto/zepto.min.js"></script>
-    <script src="lib/artTemplate/template-web.js"></script>
-    <script src="js/index.js"></script>
+        </div>
+        <div class="app-download">
+            <a href="#">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+    </header>
+    <!-- 搜索区域 -->
+    <section id="form-search">
+        <form action="">
+            <input type="search" class="search" placeholder="请输入商品">
+            <input type="button" value="搜索" class="btn-search">
+        </form>
+    </section>
+    <!-- 轮播图区域 -->
+    <section id="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="images/banner05.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner04.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner03.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/banner02.jpg" alt=""></a></div>
+
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+
+
+        </div>
+    </section>
+    <!-- 菜单 -->
+    <section id="menu">
+        <ul class="menu-list clearfloat">
+
+        </ul>
+    </section>
+    <!-- 列表头部 -->
+    <section id="list-title">
+        <span>超值折扣推荐</span>
+        <img src="images/more.png" alt="">
+    </section>
+    <!-- 商品推荐 -->
+    <main id="commodity">
+        <ul class="commodity-hot mui-table-view">
+            <!-- <li class="mui-table-view-cell mui-media">
+                <a href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="../images/shuijiao.jpg">
+                    <div class="mui-media-body">
+                        幸福
+                        <p>1</p>
+                        <p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+                    </div>
+                </a>
+            </li> -->
+        </ul>
+    </main>
+    <!-- 更多推荐 -->
+    <section id="recommen">
+            <span>品牌排行</span>
+            <img src="images/more.png" alt="">
+    </section>
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <div class="footerTop">
+            <a href="login.html">登陆</a>
+            <a href="#">注册</a>
+            <a href="index.html">
+                首页
+            </a>
+        </div>
+        <div class="footer-content">
+            <p><a href="#" style="color: #ff4e49">手机APP下载</a> <a href="index.htm" tppabs="##" style="color:#bebebe;">慢慢买手机版
+                    --
+                    掌上比价平台</a></p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
 </body>
+<script type="text/html" id="menuListTpl">
+    {{each result value}}
+<li>
+    <a href="#" data-id="{{value.indexmenuId}}">
+    {{@value.img}}
+    <p>{{value.name}}</p>
+</a>
+</li>
+
+{{/each}}
+    
+</script>
+<script type="text/html" id="commodityHotTpl">
+    {{each result value}}
+    <li class="mui-table-view-cell mui-media">
+        <a href="javascript:;">
+            <div class="mui-media-object mui-pull-left commodity-left ">
+                    {{#value.productImgSm}}
+            </div>
+            
+            <div class="mui-media-body">
+              <span>{{value.productName}}</span>
+                <p>{{value.productPinkage}}</p>
+                <p class='mui-ellipsis'><span>{{value.productFrom}}</span>|<span>{{value.productTime}}</span></p>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script src="lib/swiper 轮播图/js/swiper.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="./lib/zepto 移动端的js/zepto.js"></script>
+<script src="lib/bootstarap/js/bootstrap.js"></script>
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./js/rem.js"></script>
+<script src="./js/index.js"></script>
 
 </html>

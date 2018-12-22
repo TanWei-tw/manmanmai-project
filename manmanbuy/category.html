@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分类页面</title>
+    <link rel="stylesheet" href="./lib/bootstarap/css/bootstrap.css">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="./less/category.less">
+    <script src="lib/less/less.js"></script>
+    <script src="./js/rem.js"></script>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <div class="logo">
+            <a href="#">
+                <img src="images/header_logo.png" alt="">
+            </a>
+        </div>
+        <div class="app-download">
+            <a href="#">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+    </header>
+    <!-- 搜索区域 -->
+    <section id="form-search">
+        <form action="">
+            <input type="text" placeholder="请输入你想比价的商品" class="search">
+            <input type="button" class="btn-search" value="搜索">
+        </form>
+    </section>
+    <!-- 主体区域 -->
+    <main id="main">
+
+        <!-- <ul class="mui-table-view"> 
+                    <li class="mui-table-view-cell mui-collapse ">
+                        <a class="mui-navigate-right" href="#">大家电</a>
+                        <div class="mui-collapse-content">
+                            <!-- <ul>
+                                <li>
+                                    <a href="#">电视</a>
+                                </li>
+                                <li>
+                                        <a href="#">电视</a>
+                                    </li>
+                                    <li>
+                                            <a href="#">电视</a>
+                                        </li>
+                                        <li>
+                                                <a href="#">电视</a>
+                                            </li>
+                                            <li>
+                                                    <a href="#">电视</a>
+                                                </li>
+                                                <li>
+                                                        <a href="#">电视</a>
+                                                    </li>
+                            </ul> -->
+        <!-- </div>
+                    </li>
+                </ul>
+                <ul class="mui-table-view"> 
+                        <li class="mui-table-view-cell mui-collapse">
+                            <a class="mui-navigate-right" href="#">手机数码</a>
+                            <div class="mui-collapse-content">
+                                <p>面板1子内容</p>
+                            </div>
+                        </li>
+                    </ul> -->
+        -->
+    </main>
+    <!-- 品牌推荐排行模块 -->
+    <section id="recommen">
+        <span>品牌排行</span>
+        <img src="images/more.png" alt="">
+    </section>
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <div class="footerTop">
+            <a href="login.html">登陆</a>
+            <a href="#">注册</a>
+            <a href="index.html">
+                首页
+            </a>
+        </div>
+        <div class="footer-content">
+            <p><a href="#" style="color: #ff4e49">手机APP下载</a> <a href="index.htm" tppabs="##" style="color:#bebebe;">慢慢买手机版
+                    --
+                    掌上比价平台</a></p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+    <script type="text/html" id="mainTitleTpl">
+        {{each result value}}
+     <ul class="mui-table-view menuList-title" data-id="{{value.titleId}}"> 
+            <li class="mui-table-view-cell mui-collapse ">
+                <a class="mui-navigate-right" href="#">{{value.title}}</a>
+                <div class="mui-collapse-content">
+                    <ul class="main-content">
+                   
+                    </ul>
+                </div>
+            </li>
+        </ul>
+     {{/each}}
+    </script>
+    <script type="text/html" id="mainContentTpl">
+        {{each result value}}
+    <li>
+            <a href="productList.html?categoryid={{value.categoryId}}">{{value.category}}</a>
+        </li>
+    {{/each}}
+    </script>
+
+    
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="./lib/zepto 移动端的js/zepto.js"></script>
+    <script src="lib/bootstarap/js/bootstrap.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./js/category.js"></script>
+
+</html>

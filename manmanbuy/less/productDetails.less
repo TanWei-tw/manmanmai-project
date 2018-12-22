@@ -1,0 +1,215 @@
+@import "baseTanWei.less";
+body{
+    padding-top: .94rem;
+}
+#recommen{
+    height: .35rem;
+   width: 100vw;
+   background-color: #ff4e49;;
+   line-height: .35rem;
+   position: relative;
+margin-bottom: 20px;
+   span{
+       color:#fff;
+      font-size: .16rem;
+      padding-left: .1rem;
+   }
+   img{
+     position: absolute;
+     right: .1rem;
+     top: .05rem;
+     width: .2rem;
+     height: .2rem;
+     
+   }
+    
+}
+#screen{
+    height: .4rem;
+    width: 100vw;
+    padding-left: .1rem;
+    position: fixed;
+    background-color: rgb(241, 234, 234);
+    box-shadow: 0px 0px 1px #AAAAAA, 0px 1px 1px #AAAAAA;
+    top: .45rem;
+   z-index: 990;
+    a{
+        line-height: .4rem;
+        color: #000;
+    }
+    div{
+        position: absolute;
+        right: .1rem;
+        top: .03rem;
+        border-radius: .05rem;
+        width: .48rem;
+        height: .2.5rem;
+        text-align: center;
+        line-height: .34rem;
+        box-shadow: 0px 0px 1px #AAAAAA, 0px 1px 1px #AAAAAA;
+    }
+}
+#footer{
+    background-color: #232a34;
+   position: relative;
+    height: .94rem;
+   
+    .footerTop{
+        height: .34rem;
+        width: 100vw;
+        display: flex;
+        text-align: center;
+        line-height: .34rem;
+        border-bottom: 1px solid #727272;
+        a{
+           
+            width: 33.33%;
+            border-right: .01rem solid #727272;
+            color: #fff;
+           
+        }
+    }
+    .footer-content{
+        text-align: center;
+        font-size: .12rem;
+        p{
+            line-height: .3rem;
+            margin: 0 auto;
+        }
+    }
+}
+#main{
+    .main-title{
+        p{
+            padding: 20px 20px 0 20px;
+            text-align: left;
+            color: #000;
+        }
+    text-align: center;
+    .banner{
+        width: 1.7rem;
+       height: 1.7rem;
+    }
+    .collect{
+        width: .5rem;
+        height: .5rem;
+        vertical-align: bottom;
+    }
+    .main-nav{
+        padding-top: .3rem;
+        ul{
+            height: .3rem;
+            line-height: .3rem;
+            display: flex;
+            li{
+            width: 33%;
+            color: #fff;
+            background-color: #ffc627;
+            &:first-child{
+                background-color: #ffa025;
+            }
+            }
+        }
+    }
+    .main-price{
+        width: 100vw;
+        display: flex;
+        height: .4rem;
+        margin-top: -0.1rem;
+      font-size: .16rem;
+      border-bottom: 1px solid #ccc;
+        a{
+            width: 100%;
+            line-height: .4rem;
+           
+            &:nth-child(1){
+               
+                flex: 1;
+               
+                    img{
+                        text-align: center;
+                    }
+            }
+            &:nth-child(2){
+                text-align: left;
+                flex: 2;
+                color: #000;
+            }
+            &:nth-child(3){
+                text-align: right;
+                flex: 2;
+                color: red;
+            }
+            &:nth-child(4){
+                text-align: center;
+                flex: 1;
+                width: .56rem;
+                height: .24rem;
+                line-height: .24rem;
+                margin-top: .08rem;
+                color: #fff;
+                border-radius: .05rem;
+                background-color: #ff5500;
+            }
+        }
+    }
+    .actual-price{
+        padding: .1rem;
+        line-height: .2rem;
+        text-align: left;
+        font-size: .12rem;
+        color: #ccc;
+    }
+    }
+    .main-content{
+        .manin-content-top{
+            background-color: #ccc;
+            height: .4rem;
+            text-align: center;
+            line-height: .4rem;
+            border-top: 2px solid #000;
+            color: #000; 
+            font-size: .12rem;
+        }
+        .main-content-list{
+            font-size: .14rem;
+            ul{
+                li{
+                    padding:0.2rem 0.1rem 0.2rem 0.1rem;
+                    border-bottom: 1px solid #ccc;
+                    .data{
+                        height: .16rem;
+                        line-height: .16rem;
+                        font-size: .12rem;
+                        display: flex;
+                        color: #ccc;
+                        .userName{
+                            text-align: left;
+                            flex: 1;
+                        }
+                        .date{
+                            flex: 1;
+                            text-align: right;
+                        }
+                    }
+                    .from{
+                        width: 100vw;
+                        display: flex;
+                        position: relative;
+                        span{
+                            img{
+                                width: .16rem;
+                                height: .16rem;
+                                
+                            }
+                            &.goumai{
+                               position: absolute;
+                               right: .15rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

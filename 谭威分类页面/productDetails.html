@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分类页面</title>
+    <link rel="stylesheet" href="./lib/swiper 轮播图/css/swiper.css">
+    <link rel="stylesheet" href="./lib/bootstarap/css/bootstrap.css">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="./less/productDetails.less">
+    <script src="lib/less/less.js"></script>
+    <script src="./js/rem.js"></script>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <div class="logo">
+            <a href="#">
+                <img src="images/header_logo.png" alt="">
+            </a>
+        </div>
+        <div class="app-download">
+            <a href="#">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </div>
+    </header>
+    <section id="screen">
+        <a href="index.html">首页></a>
+        <a href="category.html">全部分类></a>
+        <a href="#" class="fenlei"></a>
+        <div href="#">筛选</div>
+    </section>
+    <!-- 搜索区域 -->
+
+    <!-- 主体区域 -->
+    <main id="main">
+        <div class="main-title">
+          
+        </div>
+        <div class="main-content">
+            <div class="manin-content-top">
+                网友评价
+            </div>
+            <div class="main-content-list">
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+
+    </main>
+    <!-- 品牌推荐排行模块 -->
+    <section id="recommen">
+        <span>品牌排行</span>
+        <img src="images/more.png" alt="">
+    </section>
+    <!-- 底部区域 -->
+    <footer id="footer">
+        <div class="footerTop">
+            <a href="login.html">登陆</a>
+            <a href="#">注册</a>
+            <a href="index.html">
+                首页
+            </a>
+        </div>
+        <div class="footer-content">
+            <p><a href="#" style="color: #ff4e49">手机APP下载</a> <a href="index.htm" tppabs="##" style="color:#bebebe;">慢慢买手机版
+                    --
+                    掌上比价平台</a></p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+    <script type="text/html" id="mainContentTpl">
+    {{each result value}}
+    <p>{{value.productName}}</p>
+    {{#value.productImg}}
+    <img class="collect" src="images/sc.jpg" alt="">
+    <div class="main-nav">
+        <ul>
+            <li>比价购买</li>
+            <li>产品参数</li>
+            <li>优先评论</li>
+        </ul>
+    </div>
+    <div class="main-price">
+        <a href="#"><img src="http://sf.manmanbuy.com/images/sitelogo/1.png"></a>
+        <a href="#">京东商城</a>
+        <a href="#">￥5999.00</a>
+        <a href="#">去购买</a>
+    </div>
+    <div class="actual-price">
+        * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+    </div>
+</div>
+    {{/each}}
+    </script>
+    <script type="text/html" id="commentTpl">
+    {{each result value}}
+    <li>
+        <div class="data">
+            <div class="userName"> {{value.comName}} </div>
+            <div class="date"> {{value.comTime}} </div>
+        </div>
+        <div class="from">
+            <span>
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+                <img src="images/star.svg" alt="">
+            </span>
+            <span class="goumai">{{value.comFrom}}</span> 
+        </div>
+        <div class="comment">
+            {{value.comContent}}
+        </div>
+
+    </li>
+    {{/each}}
+    </script>
+    <script src="lib/swiper 轮播图/js/swiper.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="./lib/zepto 移动端的js/zepto.js"></script>
+    <script src="lib/bootstarap/js/bootstrap.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./js/productDetails.js"></script>
+
+</html>

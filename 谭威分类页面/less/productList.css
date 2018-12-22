@@ -1,0 +1,218 @@
+img,
+input {
+  vertical-align: middle;
+  border: none;
+}
+a {
+  text-decoration: none;
+  color: none;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+html {
+  height: 100vh;
+}
+body {
+  font-size: .14rem;
+  position: relative;
+  padding-top: .49rem;
+  background: #fff;
+  height: 100%;
+}
+li {
+  list-style: none;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+input {
+  line-height: normal;
+  border: 0;
+  outline: 0;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+#header {
+  width: 100vw;
+  height: .49rem;
+  background-color: #ff4e49;
+  padding: .1rem;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 999;
+}
+#header .logo {
+  min-height: .25rem;
+  overflow: hidden;
+}
+#header .logo img {
+  width: 1.85rem;
+  height: .25rem;
+}
+#header .app-download {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding-top: .1rem;
+  padding-right: .05rem;
+}
+#header .app-download img {
+  width: .35rem;
+  height: .35rem;
+}
+.clearfloat:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.clearfloat {
+  zoom: 1;
+}
+#footer {
+  background-color: #232a34;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: .94rem;
+  z-index: 999;
+}
+#footer .footerTop {
+  height: .34rem;
+  width: 100vw;
+  display: flex;
+  text-align: center;
+  line-height: .34rem;
+  border-bottom: 1px solid #727272;
+}
+#footer .footerTop a {
+  width: 33.33%;
+  border-right: .01rem solid #727272;
+  color: #fff;
+}
+#footer .footer-content {
+  text-align: center;
+  font-size: .12rem;
+}
+#footer .footer-content p {
+  line-height: .3rem;
+  margin: 0 auto;
+}
+body {
+  padding: 0.94rem 0 1.29rem 0;
+}
+#recommen {
+  height: .35rem;
+  width: 100vw;
+  background-color: #ff4e49;
+  line-height: .35rem;
+  position: fixed;
+  z-index: 990;
+  bottom: 0.9rem;
+}
+#recommen span {
+  color: #fff;
+  font-size: .16rem;
+  padding-left: .1rem;
+}
+#recommen img {
+  position: absolute;
+  right: .1rem;
+  top: .05rem;
+  width: .2rem;
+  height: .2rem;
+}
+#screen {
+  height: .4rem;
+  width: 100vw;
+  padding-left: .1rem;
+  position: fixed;
+  background-color: #f1eaea;
+  box-shadow: 0px 0px 1px #AAAAAA, 0px 1px 1px #AAAAAA;
+  top: .45rem;
+  z-index: 990;
+}
+#screen a {
+  line-height: .4rem;
+  color: #000;
+}
+#screen div {
+  position: absolute;
+  right: .1rem;
+  top: .03rem;
+  border-radius: .05rem;
+  width: .48rem;
+  height: .2.5rem;
+  text-align: center;
+  line-height: .34rem;
+  box-shadow: 0px 0px 1px #AAAAAA, 0px 1px 1px #AAAAAA;
+}
+#main {
+  height: 100%;
+  position: relative;
+}
+#main ul {
+  height: 100%;
+}
+#main ul li {
+  height: 1.42rem;
+  width: 100vw;
+  padding: 0 .1rem;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+#main ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#main ul li a .main-pic img {
+  width: 1rem;
+  height: 1rem;
+}
+#main ul li a .mainContent {
+  position: absolute;
+  left: 1.2rem;
+  top: 0px;
+}
+#main ul li a .mainContent p.mainContent-price .price {
+  font-size: .2rem;
+  color: #ff4e49;
+  vertical-align: middle;
+}
+#main ul li a .mainContent p.mainContent-price .star {
+  line-height: .45rem;
+}
+#main ul li a .mainContent p.mainContent-price .star img {
+  width: .18rem;
+  height: .18rem;
+}
+#main ul li a .other {
+  position: absolute;
+  right: 0px;
+}
+#main ul li a .other span {
+  font-size: .12rem;
+}
